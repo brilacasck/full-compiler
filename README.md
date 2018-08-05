@@ -19,14 +19,14 @@ This project consists of two major sections:
  
 So you must first write a config file for lexical analyser and one, for sythesis analyser in the format below:
 
-#### lexeme.conf format
+### lexeme.conf format
 
 ```
 lexeme_name_upper_case := lexeme_regex
 ```
 For example: `DIGIT := [0-9]`
 
-### You can define the lexems using **regexes** with these operators:
+#### You can define the lexemes using **regexes** with these operators:
 
 > **\*** : for a phrase repetition for zero or more times
 >> a* : {ε, a, aa, aaa, ...}
@@ -48,8 +48,41 @@ For example: `DIGIT := [0-9]`
 >> LETTER := [a-z]|[A-Z]
 >> ID := \LETTER(\LETTER|_|\DIGIT)+
  
- 
 
+### grammar.conf format
+
+```
+grammar_name_upper_case := grammar_defenition
+```
+For example: `S := if ([E])`
+ 
+ #### Some rules for grammar configuration file:
+ 
+> use **[GRAMMAR_RULE]** for using other rules in the current rule
+>> S := if ([E]) {[F]}
+>> E := id < 3 id
+>> F := string id = [R]
+
+<hr />
+
+#### IMPORANT NOTICE 
+In the current code in this repository, you can use these phrases in grammars to determine the type of expression:
+`id` and `literal`
+
+For example `E := id` is a grammar in which **E** derives **id** type.
+here, **id** is not just one string named "id". it consists of all strings defined for **ID lexeme**
+
+To add more lexeme recognizer, add other defined lexemes in this line of code in file **`ASCK_COMPILER.java`** :
+(line 371)
+
+```
+if ("ID".equals(tkArray.get(i).getKey()) || "LITERAL".equals(tkArray.get(i).getKey())) {
+    inputs.add(tkArray.get(i).getKey().toLowerCase());
+}
+```
+This, will cause each tokens (of the set of tokens which is going to be parsed), to be compared and if it was an **ID** lexeme or **LITERAL** lexeme, then change the parser current input to the lexeme_name, (not the original string)
+
+<hr />
 <hr />
 
 ## Authors
