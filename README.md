@@ -92,7 +92,7 @@ Here is an example for a code (*stranger things fancy code*) is going to be toke
  1. set of tokenized lexemes (or errors)
  2. an answer for that if the code is correct (in accordance with the grammar) or not
  
- ![SHOT](./test)
+ ![SHOT](./test.png)
 
 
 <hr />
