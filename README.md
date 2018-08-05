@@ -85,6 +85,18 @@ This, will cause each tokens (of the set of tokens which is going to be parsed),
 <hr />
 <hr />
 
+## Running the tests
+Here is an example for a code (*stranger things fancy code*) is going to be tokenized at first and second, to be parsed.
+
+#### The output is
+ 1. set of tokenized lexemes (or errors)
+ 2. an answer for that if the code is correct (in accordance with the grammar) or not
+ 
+ ![SHOT](./test)
+
+
+<hr />
+
 ## Authors
 
   - Alireza Kavian ( [@alirezakay](https://github.com/alirezakay) )
