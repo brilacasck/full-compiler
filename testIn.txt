@@ -1,0 +1,5 @@
+S := {[Stmts]}
+Stmts := [Stmt][Stmts] | ε
+Stmt := id =[Expr]; | if ([Expr])[Stmt]
+Expr := id[Etail]
+Etail := +[Expr] | -[Expr] | ε
