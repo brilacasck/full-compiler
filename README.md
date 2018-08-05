@@ -43,7 +43,7 @@ For example: `DIGIT := [0-9]`
 > **[]** : for defining a period
 >> [0-9] : {0,1,2,3,4,5,6,7,8,9}
 
-> **{\\LEXEME_NAME}** : for using some onother defined lexeme
+> **\\LEXEME_NAME** : for using some onother defined lexeme
 >> DIGIT := [0-9]
 >> LETTER := [a-z]|[A-Z]
 >> ID := \LETTER(\LETTER|_|\DIGIT)+
