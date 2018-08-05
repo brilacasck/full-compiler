@@ -82,6 +82,12 @@ if ("ID".equals(tkArray.get(i).getKey()) || "LITERAL".equals(tkArray.get(i).getK
 ```
 This, will cause each tokens (of the set of tokens which is going to be parsed), to be compared and if it was an **ID** lexeme or **LITERAL** lexeme, then change the parser current input to the lexeme_name, (not the original string)
 
+**PAY ATTENTION THAT**
+
+The project may have some bugs, and you might need to manipulate some rules in config files.
+
+If you want more information and some orders, you can contact us by [email](mailto:brilacasck@gmail.com)
+
 <hr />
 <hr />
 
