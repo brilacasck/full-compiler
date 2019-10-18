@@ -1,23 +1,21 @@
 # full-compiler
-A flexible and customizable complete compiler with your manual configuration written with java language and javafx library
+A flexible and customizable complete compiler with your manual configuration written with java language and JavaFX library
 
 ## Documentation
-This project consists of two major sections:
+This project consists of two primary sections:
 
  - **lexical analysis**
  - **synthesis analysis**
  
- And at last they have been concatenated.
- 
  ***Note That***
  
  - This project has been implemented with **java** and **javafx** in **net beans** ide.
- - The **demo** of project is available in exe and jar format. you can download it [here](https://alirezakay.github.io/showcase/term5).
+ - The **demo** of this project is available in exe and jar format. you can download it [here](https://alirezakay.github.io/showcase/term5).
  - This compiler takes two customized **Configuration**.
    - one for lexemes
    - the other for grammars
  
-So you must first write a config file for lexical analyser and one, for sythesis analyser in the format below:
+So you must first write a config file for lexical analyzer and one, for synthesis analyzer in the format below:
 
 ### lexeme.conf format
 
@@ -105,8 +103,8 @@ Here is an example for a code (*stranger things fancy code*) is going to be toke
 
 ## Authors
 
-  - Alireza Kavian ( [@alirezakay](https://github.com/alirezakay) )
   - Soheil Changizi ( [@cocolico14](https://github.com/cocolico14) )
+  - Alireza Kavian ( [@alirezakay](https://github.com/alirezakay) )
   
 ## Org.
 
