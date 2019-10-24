@@ -1,5 +1,5 @@
-# full-compiler
-A flexible and customizable complete compiler with your manual configuration written with java language and JavaFX library
+# full-parser
+A flexible and customizable CLR parser with your manual configuration written with java language and JavaFX library
 
 ## Documentation
 This project consists of two primary sections:
